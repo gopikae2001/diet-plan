@@ -53,12 +53,12 @@ const TopNavbar: React.FC = () => {
       <div className="flex items-center gap-6">
         {/* <div className="text-2xl font-bold text-blue-500">🟰</div> */}
         <nav className="flex items-center gap-6 text-sm">
-          <a href="#" className="hover:text-blue-400">Dashboard</a>
-          <a href="#" className="hover:text-blue-400">Billing</a>
-          <a href="#" className="hover:text-blue-400">Pharmacy</a>
-          <a href="#" className="hover:text-blue-400">Appointments</a>
+          <a href="#" className="font-medium text-lg hover:text-blue-400 transition-colors duration-200">Dashboard</a>
+          <a href="#" className="font-medium text-lg hover:text-blue-400 transition-colors duration-200">Billing</a>
+          <a href="#" className="font-medium text-lg hover:text-blue-400 transition-colors duration-200">Pharmacy</a>
+          <a href="#" className="font-medium text-lg hover:text-blue-400 transition-colors duration-200">Appointments</a>
           <div className="relative group">
-            <button className="hover:text-blue-400">More ▾</button>
+            <button className="font-medium text-lg hover:text-blue-400 transition-colors duration-200">More ▾</button>
             <div className="absolute hidden group-hover:block bg-white text-black mt-2 p-2 rounded shadow z-10">
               <a href="#" className="block px-4 py-1 hover:bg-gray-200">Settings</a>
               <a href="#" className="block px-4 py-1 hover:bg-gray-200">Reports</a>

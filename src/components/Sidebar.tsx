@@ -29,31 +29,34 @@ const Sidebar: React.FC = () => {
 
       {/* Navigation Items */}
       <nav className="flex-1 overflow-y-auto">
-        <ul className="space-y-1 px-2">
+        <ul className="space-y-2 px-2">
           <li
-            className="flex items-center justify-between px-4 py-2 rounded hover:bg-[#1f2b3a] cursor-pointer"
+            className="flex items-center justify-between px-4 py-2 rounded hover:bg-[#1f2b3a] cursor-pointer pb-5 mt-7"
             onClick={() => navigate('/food-items')}
           >
-            <div className="flex items-center gap-3">
-              <Utensils size={18} /> Add Food Item
+            <div className="flex items-center gap-6">
+              <Utensils size={18} />
+              <span className="font-medium text-sm text-gray-200">Add Food Item</span>
             </div>
             <ChevronRight size={16} className="text-gray-400" />
           </li>
           <li
-            className="flex items-center justify-between px-4 py-2 rounded hover:bg-[#1f2b3a] cursor-pointer"
+            className="flex items-center justify-between px-4 py-2 rounded hover:bg-[#1f2b3a] cursor-pointer pb-5 mt-7"
             onClick={() => navigate('/diet-plans')}
           >
             <div className="flex items-center gap-3">
-              <ClipboardList size={18} /> Diet Order Management
+              <ClipboardList size={18} />
+              <span className="font-medium text-sm text-gray-200">Diet Order Management</span>
             </div>
             <ChevronRight size={16} className="text-gray-400" />
           </li>
           <li
-            className="flex items-center justify-between px-4 py-2 rounded hover:bg-[#1f2b3a] cursor-pointer"
+            className="flex items-center justify-between px-4 py-2 rounded hover:bg-[#1f2b3a] cursor-pointer pb-5 mt-7"
             onClick={() => navigate('/orders')}
           >
             <div className="flex items-center gap-3">
-              <Package size={18} /> Diet Package Management
+              <Package size={18} />
+              <span className="font-medium text-sm text-gray-200">Diet Package Management</span>
             </div>
             <ChevronRight size={16} className="text-gray-400" />
           </li>
